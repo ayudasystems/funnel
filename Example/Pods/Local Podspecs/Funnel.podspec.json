@@ -1,0 +1,25 @@
+{
+  "name": "Funnel",
+  "version": "0.1.0",
+  "summary": "A short description of Funnel.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/Funnel",
+  "license": "MIT",
+  "authors": {
+    "Pierre-Yves Troel": "pyt@pyttroll.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/Funnel.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "Funnel": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
