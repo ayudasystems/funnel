@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'EF0134D3CDE508B6B078D35B'
+               BlueprintIdentifier = '34C6FEA3FD0B2C6BB88CC505'
                BlueprintName = 'Funnel'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Funnel.framework'>
