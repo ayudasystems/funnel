@@ -34,7 +34,6 @@
 		284531516BBBBC0D407378C9 /* Pods_Funnel_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Funnel_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40E0DA2A1C25F5F500076533 /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		40E0DA301C25F69D00076533 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		40E0DA321C260DAB00076533 /* funnel-demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "funnel-demo.gif"; sourceTree = "<group>"; };
 		470C55C9035553BA5F2C94FE /* Pods-Funnel_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Funnel_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Funnel_Tests/Pods-Funnel_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* Funnel_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Funnel_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -136,7 +135,6 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				40E0DA321C260DAB00076533 /* funnel-demo.gif */,
 				E71DE79408DFF6B249B1F818 /* Funnel.podspec */,
 				652B5DD9760AD178898978EB /* README.md */,
 				C819A6F0CF88CEFE1BB86A3F /* LICENSE */,
