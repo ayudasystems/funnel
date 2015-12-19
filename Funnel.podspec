@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Pierre-Yves Troel" => "pyt@pyttroll.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/Funnel.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/ayudasystems/Funnel.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
