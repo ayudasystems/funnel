@@ -292,6 +292,10 @@ public class FunnelChart : UIView {
         let totalValues = _values.reduce(0, combine: +)
         var cumulativeValue: Double = 0
         
+        if abs(totalValues) < 1e-7 {
+            return
+        }
+        
         var index = 0
 
         //
@@ -377,9 +381,9 @@ public class FunnelChart : UIView {
                 points.append(CGPoint(x: endX1, y: startY))
             }
             else if endY < (coneHeight + coneLipHeight) { // The section is below the lip of the cone and above the junction of the cone and the stem
-                let startX1 = slopeTan * startY
+                let startX1 = slopeTan * (startY - coneLipHeight)
                 let endX1 = rect.width - startX1
-                let startX2 = slopeTan * endY
+                let startX2 = slopeTan * (endY - coneLipHeight)
                 let endX2 = rect.width - startX2
                 
                 points.append(CGPoint(x: startX1, y: startY))
