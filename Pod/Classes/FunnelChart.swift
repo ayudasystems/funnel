@@ -276,7 +276,7 @@ open class FunnelChart : UIView {
         ctx?.setStrokeColor(_horizontalLinesColor.cgColor)
         ctx?.setLineWidth(_horizontalLinesThickness)
         ctx?.setLineCap(.round)
-        CGContextSetLineDash(ctx, 0.0, _horizontalLinesDashStyle, 2)
+        ctx?.setLineDash(phase: 0.0, lengths: _horizontalLinesDashStyle)
         
         //
         // Calculating pixel dimensions...
