@@ -25,7 +25,7 @@ class SettingsTableViewController: UITableViewController {
     @IBOutlet var funnelLeftShadowWidthStepper: UIStepper!
     @IBOutlet var funnelLeftShadowWidthLabel: UILabel!
     
-    private var _funnerChart: FunnelChart?
+    fileprivate var _funnerChart: FunnelChart?
     
     var funnelChart: FunnelChart? {
         get {
@@ -48,53 +48,53 @@ class SettingsTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func didChangeValueOfConeLipHeightStepper(sender: AnyObject) {
+    @IBAction func didChangeValueOfConeLipHeightStepper(_ sender: AnyObject) {
         if funnelChart != nil {
             funnelChart!.coneLipHeightAsFractionOfViewHeight = CGFloat(self.coneLipHeightStepper.value / 100)
             self.updateLabels()
         }
     }
     
-    @IBAction func didChangeValueOfStemHeightStepper(sender: AnyObject) {
+    @IBAction func didChangeValueOfStemHeightStepper(_ sender: AnyObject) {
         if funnelChart != nil {
             funnelChart!.stemHeightAsFractionOfViewHeight = CGFloat(self.stemHeightStepper.value / 100)
             self.updateLabels()
         }
     }
     
-    @IBAction func didChangeValueOfStemWidthStepper(sender: AnyObject) {
+    @IBAction func didChangeValueOfStemWidthStepper(_ sender: AnyObject) {
         if funnelChart != nil {
             funnelChart!.stemWidthAsFractionOfViewWidth = CGFloat(self.stemWidthStepper.value / 100)
             self.updateLabels()
         }
     }
     
-    @IBAction func didChangeValueOfSliceSpacingStepper(sender: AnyObject) {
+    @IBAction func didChangeValueOfSliceSpacingStepper(_ sender: AnyObject) {
         if funnelChart != nil {
             funnelChart!.sliceSpacingAsFractionOfViewHeight = CGFloat(self.sliceSpacingStepper.value / 100)
             self.updateLabels()
         }
     }
     
-    @IBAction func didChangeValueOfAnimateIntoViewSwitch(sender: AnyObject) {
+    @IBAction func didChangeValueOfAnimateIntoViewSwitch(_ sender: AnyObject) {
         if funnelChart != nil {
-            funnelChart!.animateIntoViewWhenPropertiesChange = self.animateIntoViewSwitch.on
+            funnelChart!.animateIntoViewWhenPropertiesChange = self.animateIntoViewSwitch.isOn
         }
     }
     
-    @IBAction func didChangeValueOfDrawHorizontalLinesSwitch(sender: AnyObject) {
+    @IBAction func didChangeValueOfDrawHorizontalLinesSwitch(_ sender: AnyObject) {
         if funnelChart != nil {
-            funnelChart!.drawHorizontalLines = self.drawHorizontalLinesSwitch.on
+            funnelChart!.drawHorizontalLines = self.drawHorizontalLinesSwitch.isOn
         }
     }
     
-    @IBAction func didChangeValueOfDrawFunnelLeftShadowSwitch(sender: AnyObject) {
+    @IBAction func didChangeValueOfDrawFunnelLeftShadowSwitch(_ sender: AnyObject) {
         if funnelChart != nil {
-            funnelChart!.drawFunnelLeftShadow = self.drawFunnelLeftShadowSwitch.on
+            funnelChart!.drawFunnelLeftShadow = self.drawFunnelLeftShadowSwitch.isOn
         }
     }
 
-    @IBAction func didChangeValueOfFunnelLeftShadowWidthStepper(sender: AnyObject) {
+    @IBAction func didChangeValueOfFunnelLeftShadowWidthStepper(_ sender: AnyObject) {
         if funnelChart != nil {
             funnelChart!.funnelLeftShadowWidthAsFractionOfViewWidth = CGFloat(self.funnelLeftShadowWidthStepper.value / 100)
             self.updateLabels()
@@ -113,9 +113,9 @@ class SettingsTableViewController: UITableViewController {
         self.sliceSpacingStepper.value = Double(self.funnelChart!.sliceSpacingAsFractionOfViewHeight * CGFloat(100))
         self.funnelLeftShadowWidthStepper.value = Double(self.funnelChart!.funnelLeftShadowWidthAsFractionOfViewWidth * CGFloat(100))
 
-        self.animateIntoViewSwitch.on = self.funnelChart!.animateIntoViewWhenPropertiesChange
-        self.drawFunnelLeftShadowSwitch.on = self.funnelChart!.drawFunnelLeftShadow
-        self.drawHorizontalLinesSwitch.on = self.funnelChart!.drawHorizontalLines
+        self.animateIntoViewSwitch.isOn = self.funnelChart!.animateIntoViewWhenPropertiesChange
+        self.drawFunnelLeftShadowSwitch.isOn = self.funnelChart!.drawFunnelLeftShadow
+        self.drawHorizontalLinesSwitch.isOn = self.funnelChart!.drawHorizontalLines
 
         self.updateLabels()
     }

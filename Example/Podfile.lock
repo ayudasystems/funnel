@@ -1,20 +1,22 @@
 PODS:
   - Funnel (0.1.0)
-  - Nimble (3.0.0)
-  - Quick (0.8.0)
+  - Nimble (5.1.1)
+  - Quick (0.10.0)
 
 DEPENDENCIES:
   - Funnel (from `../`)
-  - Nimble (= 3.0.0)
-  - Quick (~> 0.8.0)
+  - Nimble
+  - Quick
 
 EXTERNAL SOURCES:
   Funnel:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Funnel: 41567fbe604705ff2b1816d4df4270b6673b011c
-  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
-  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+  Funnel: 158448afc1d16ffa450e156075738c7bb9ea49ad
+  Nimble: 415e3aa3267e7bc2c96b05fa814ddea7bb686a29
+  Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 3f2955e2927e6f166568e9a45790f10be51eeda8
+
+COCOAPODS: 1.1.1

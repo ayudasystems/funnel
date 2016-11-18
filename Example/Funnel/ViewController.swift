@@ -24,9 +24,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let vc = segue.destinationViewController as! SettingsTableViewController
+        let vc = segue.destination as! SettingsTableViewController
         vc.funnelChart = self.funnelChart
     }
 }
