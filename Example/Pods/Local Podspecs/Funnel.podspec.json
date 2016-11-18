@@ -9,7 +9,7 @@
     "Pierre-Yves Troel": "pyt@pyttroll.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/Funnel.git",
+    "git": "https://github.com/ayudasystems/Funnel.git",
     "tag": "0.1.0"
   },
   "platforms": {
